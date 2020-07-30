@@ -1,0 +1,366 @@
+{
+  "id": "22bb9020-543b-4544-8e04-05c944ea99d1",
+  "version": "2.0",
+  "name": "MyFirstAutomation",
+  "url": "http://localhost:8888",
+  "tests": [{
+    "id": "b55501c2-4bea-4abb-8165-7f3c2e23075d",
+    "name": "ClickOnce",
+    "commands": [{
+      "id": "4045ec8f-a11e-4b6d-8b0a-c9fe2915b231",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13b4b758-f59b-4a9b-a211-a442ede423aa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Click me baby",
+      "targets": [
+        ["linkText=Click me baby", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Click me baby')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'clickmebaby.php')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Click me baby')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76689474-513f-4b68-ba07-242de95a3b5e",
+      "comment": "",
+      "command": "click",
+      "target": "id=clickMe",
+      "targets": [
+        ["id=clickMe", "id"],
+        ["css=#clickMe", "css:finder"],
+        ["xpath=//button[@id='clickMe']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click me !')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce0a6cd2-bc8d-4879-8f0c-6faeed4f9eb6",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=clicks",
+      "targets": [
+        ["id=clicks", "id"],
+        ["css=#clicks", "css:finder"],
+        ["xpath=//h1[@id='clicks']", "xpath:attributes"],
+        ["xpath=//div[2]/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": "1"
+    }, {
+      "id": "c00445c1-2329-4d71-85cb-cdb2bda1e30c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.description",
+      "targets": [
+        ["css=.description", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'klik')]", "xpath:innerText"]
+      ],
+      "value": "klik"
+    }]
+  }, {
+    "id": "da497aa7-4077-4235-ae58-bab0062cb5f0",
+    "name": "ClickTwice",
+    "commands": [{
+      "id": "cf8766ae-8eff-4ffa-a1d8-61e3931c7532",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec43a151-f1b4-498d-8787-59c87992dba2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "650x875",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "267e2622-553e-4574-860b-7d7e09536482",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Click me baby",
+      "targets": [
+        ["linkText=Click me baby", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Click me baby')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'clickmebaby.php')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Click me baby')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "48d5d7fb-3d78-46b4-b4cf-305595f47f50",
+      "comment": "",
+      "command": "click",
+      "target": "id=clickMe",
+      "targets": [
+        ["id=clickMe", "id"],
+        ["css=#clickMe", "css:finder"],
+        ["xpath=//button[@id='clickMe']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click me !')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c13ad728-998c-42a0-b39a-1910867ad348",
+      "comment": "",
+      "command": "click",
+      "target": "id=clickMe",
+      "targets": [
+        ["id=clickMe", "id"],
+        ["css=#clickMe", "css:finder"],
+        ["xpath=//button[@id='clickMe']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click me !')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35704917-8683-4dfe-b7c1-62b1bdd9f9c8",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=clicks",
+      "targets": [
+        ["id=clicks", "id"],
+        ["css=#clicks", "css:finder"],
+        ["xpath=//h1[@id='clicks']", "xpath:attributes"],
+        ["xpath=//div[2]/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'2')]", "xpath:innerText"]
+      ],
+      "value": "2"
+    }, {
+      "id": "8f6e8851-cd1c-4cb2-a4ad-99a6363f3d9b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.description",
+      "targets": [
+        ["css=.description", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'kliky')]", "xpath:innerText"]
+      ],
+      "value": "kliky"
+    }]
+  }, {
+    "id": "4c233d73-d180-426f-a013-a9f8647b0ba9",
+    "name": "Count",
+    "commands": [{
+      "id": "2f53210e-a089-4711-bf86-21f2d1c7c5fa",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff0a1bce-9024-4076-9984-7a1740290ae6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Kalkulacka",
+      "targets": [
+        ["linkText=Kalkulacka", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Kalkulacka')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'kalkulacka.php')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Kalkulacka')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7130b92e-d85a-4702-90a7-ab33f99b5439",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstInput",
+      "targets": [
+        ["id=firstInput", "id"],
+        ["css=#firstInput", "css:finder"],
+        ["xpath=//input[@id='firstInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c8f2378-4cb3-4029-9078-a02d50255b6a",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstInput",
+      "targets": [
+        ["id=firstInput", "id"],
+        ["css=#firstInput", "css:finder"],
+        ["xpath=//input[@id='firstInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "043e35b7-6482-4000-b21d-e5942ad8a22d",
+      "comment": "",
+      "command": "click",
+      "target": "id=secondInput",
+      "targets": [
+        ["id=secondInput", "id"],
+        ["css=#secondInput", "css:finder"],
+        ["xpath=//input[@id='secondInput']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71f649d7-d1cc-44ee-aa35-210f6be32922",
+      "comment": "",
+      "command": "type",
+      "target": "id=secondInput",
+      "targets": [
+        ["id=secondInput", "id"],
+        ["css=#secondInput", "css:finder"],
+        ["xpath=//input[@id='secondInput']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "1b8779c9-917f-40fd-84b3-a2a0fed2b48f",
+      "comment": "",
+      "command": "click",
+      "target": "id=count",
+      "targets": [
+        ["id=count", "id"],
+        ["css=#count", "css:finder"],
+        ["xpath=//button[@id='count']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Spočítaj')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3c67947-b4f6-402c-9d21-00702d64a5ad",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=result",
+      "targets": [
+        ["id=result", "id"],
+        ["css=#result", "css:finder"],
+        ["xpath=//h1[@id='result']", "xpath:attributes"],
+        ["xpath=//div/div/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'7')]", "xpath:innerText"]
+      ],
+      "value": "7"
+    }]
+  }, {
+    "id": "58e7823e-9a46-4c8f-bf18-dfb0ba51bd12",
+    "name": "Deduct",
+    "commands": [{
+      "id": "b56df446-5522-4963-b08b-40d12fe6a7ba",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eec90b20-f856-416a-9917-e94c60b32df5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Kalkulacka",
+      "targets": [
+        ["linkText=Kalkulacka", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Kalkulacka')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'kalkulacka.php')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Kalkulacka')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5939bc6f-f051-42b5-b7e7-23919efb8d87",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstInput",
+      "targets": [
+        ["id=firstInput", "id"],
+        ["css=#firstInput", "css:finder"],
+        ["xpath=//input[@id='firstInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aba51e93-dca1-4bb7-8ff4-f12908d7a5df",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstInput",
+      "targets": [
+        ["id=firstInput", "id"],
+        ["css=#firstInput", "css:finder"],
+        ["xpath=//input[@id='firstInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "fd40dceb-c991-4aaf-a466-e79a307b15cc",
+      "comment": "",
+      "command": "click",
+      "target": "id=secondInput",
+      "targets": [
+        ["id=secondInput", "id"],
+        ["css=#secondInput", "css:finder"],
+        ["xpath=//input[@id='secondInput']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6aaabf85-f20d-4d33-82ba-3f0ffb521908",
+      "comment": "",
+      "command": "type",
+      "target": "id=secondInput",
+      "targets": [
+        ["id=secondInput", "id"],
+        ["css=#secondInput", "css:finder"],
+        ["xpath=//input[@id='secondInput']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "cc0548ae-8c75-4f6d-a6cb-a5cb12d8eca9",
+      "comment": "",
+      "command": "click",
+      "target": "id=deduct",
+      "targets": [
+        ["id=deduct", "id"],
+        ["css=#deduct", "css:finder"],
+        ["xpath=//button[@id='deduct']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Odpočítaj')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f5077c4-fcc1-4f0b-8dc8-dd3272dd8aa1",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=result",
+      "targets": [
+        ["id=result", "id"],
+        ["css=#result", "css:finder"],
+        ["xpath=//h1[@id='result']", "xpath:attributes"],
+        ["xpath=//div/div/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'7')]", "xpath:innerText"]
+      ],
+      "value": "2"
+    }]
+  }],
+  "suites": [{
+    "id": "232f4e02-7d9a-48ee-a3cb-804f392d4cb6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b55501c2-4bea-4abb-8165-7f3c2e23075d"]
+  }, {
+    "id": "be946219-2447-4be2-9004-718821d6e969",
+    "name": "ClickMeBabySuite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b55501c2-4bea-4abb-8165-7f3c2e23075d", "da497aa7-4077-4235-ae58-bab0062cb5f0"]
+  }],
+  "urls": ["http://localhost:8888/"],
+  "plugins": []
+}
